@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+button{
+    background-color: aquamarine;
+    border-radius: 25px;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.color1{
+    background-color: #b5ddff;
+}
+
+.color2{
+    background-color: white;
+}
+
+.color3{
+    background-color: #9792e4;
+}
+
+
+/*************************
+        HEADER 
+**************************/
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    width: 100%;
+    background-color: #0084fd;
+    height: 100px;
+    color: white;
+}
+
+/************************
+        MAIN
+*************************/
+/* demo section */
+.container{
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.col{
+    margin: 1rem 0;
+    border-radius: 15px;
+}
+
+.card{
+    padding: 1rem 2rem;
+}
+
+/* planning section */
+.planning{
+    width: 100%;
+    background-color: #9792e4;
+    text-align: center;
+    padding: 1rem;
+}
