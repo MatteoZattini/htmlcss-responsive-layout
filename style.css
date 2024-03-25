@@ -7,6 +7,7 @@
 
 .flex{
     display: flex;
+    flex-direction: column;
 }
 
 button{
@@ -67,6 +68,7 @@ nav{
 
 .card{
     padding: 1rem 2rem;
+    margin: 1rem 0;
     border-radius: 15px;
 }
 
@@ -86,4 +88,41 @@ footer{
     background-color: darkgray;
     text-align: center;
     padding: 1rem;
+}
+
+/************************
+        MEDIA QUERIES
+*************************/
+@media  screen and (min-width: 768px) {
+    .flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .col-small{
+        width: calc(100% / 3 - 1rem);
+        margin: 0;
+    }
+
+    .col-big{
+        width: calc(66.6% - 1rem);
+    }
+
+    .card-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .benefit-flex{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .card-benefit{
+        width: calc(100% / 2 - 0.5rem);
+    }
 }
