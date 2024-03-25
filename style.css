@@ -77,3 +77,13 @@ nav{
     text-align: center;
     padding: 1rem;
 }
+
+/*************************
+        FOOTER
+**************************/
+footer{
+    width: 100%;
+    background-color: darkgray;
+    text-align: center;
+    padding: 1rem;
+}
