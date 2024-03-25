@@ -52,13 +52,18 @@ nav{
     color: white;
 }
 
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
 /************************
         MAIN
 *************************/
 /* demo section */
 .container{
     border: 1px solid black;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .col{
@@ -84,6 +89,7 @@ nav{
         FOOTER
 **************************/
 footer{
+    height: 200px;
     width: 100%;
     background-color: darkgray;
     text-align: center;
@@ -124,5 +130,24 @@ footer{
 
     .card-benefit{
         width: calc(100% / 2 - 0.5rem);
+    }
+
+    .col-left{
+        width: calc(65% - 0.5rem);
+    }
+
+    .col-right{
+        width: calc(35% - 0.5rem);
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .boxed{
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    .card-benefit{
+        width: calc(100% / 3 - 0.7rem);
     }
 }
