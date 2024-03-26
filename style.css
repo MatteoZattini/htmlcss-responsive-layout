@@ -10,11 +10,18 @@
     flex-direction: column;
 }
 
+.centerjustalign{
+    justify-content: center;
+    align-items: center;
+}
+
 button{
-    background-color: aquamarine;
+    background-color: #0084fd;
     border-radius: 25px;
     margin: 1rem 0;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    text-align: center;
 }
 
 .text-centered{
@@ -23,7 +30,7 @@ button{
 
 h2{
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0;
 }
 
 .color1{
@@ -38,9 +45,91 @@ h2{
     background-color: #9792e4;
 }
 
+.text-purp{
+    color: #9792e4;
+}
+
+.white{
+    color: white;
+}
+
+.icon-color{
+    color: #0084fd;
+}
+
 img{
     width: 100%;
 }
+
+.size1{
+    font-size: 1rem;
+}
+
+.size2{
+    font-size: 2rem;
+}
+
+.size3{
+    font-size: 5rem;
+}
+
+p{
+    line-height: 2rem;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.circle1{
+    border-radius: 100%;
+    height: 15rem;
+    width: 15rem;
+    background-image: url(./img/testimonial1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.circle2{
+    border-radius: 100%;
+    height: 15rem;
+    width: 15rem;
+    background-image: url(./img/testimonial2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.circle3{
+    border-radius: 100%;
+    height: 15rem;
+    width: 15rem;
+    background-image: url(./img/testimonial3.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.circle4{
+    border-radius: 100%;
+    height: 20rem;
+    width: 20rem;
+    background-image: url(./img/about.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    margin: 1rem 0;
+}
+
+.circle1, .circle2, .circle3{
+    margin: 1rem 0;
+}
+
+.black{
+    color: black;
+}
+
 
 
 /*************************
@@ -68,7 +157,6 @@ nav{
 *************************/
 /* demo section */
 .container{
-    border: 1px solid black;
     margin: 1rem;
 }
 
@@ -85,10 +173,31 @@ nav{
 
 /* planning section */
 .planning{
+    margin-top: 3rem;
     width: 100%;
     background-color: #9792e4;
     text-align: center;
     padding: 1rem;
+}
+
+.number{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #9792e4;
+}
+
+.card-benefit > p{
+    color: #9792e4;
+}
+
+.card-benefit > h3{
+    color: #9792e4;
+}
+
+.card-benefit > button{
+    background-color: #9792e4;
+    color: white;
 }
 
 /*************************
@@ -148,12 +257,30 @@ footer{
 }
 
 @media screen and (min-width: 1140px) {
+
+    .container{
+        margin-top: 3rem;
+    }
+
     .boxed{
         width: 70%;
-        margin: 0 15%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     .card-benefit{
         width: calc(100% / 3 - 0.7rem);
+    }
+
+    .col-big .card{
+        display: flex;
+    }
+
+    .planning .boxed{
+        display: flex;
+    }
+
+    .marginright{
+        margin-right: 1.5rem;
     }
 }
